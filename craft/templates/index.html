@@ -1,0 +1,230 @@
+{#
+ # Homepage template
+ # ---------------
+ #
+ # When this template gets loaded, it will be because someone has accessed
+ # http://yoursite.com/ (without any URI). Craft checks to see if you have
+ # a Single section set to be the Homepage (as you do, by default), and
+ # loads the section’s Template (this file). A special ‘entry’ variable
+ # will already be set for you, assigned to the Homepage entry.
+ #
+ # It's worth noting that even if you didn't have a Homepage Single section,
+ # as long as this template remains at craft/templates/index.html, it
+ # would still be the one to get loaded when accessing http://yoursite.com/,
+ # albeit without an ‘entry’ variable already set for you.
+ #
+ # See this page for more details on how Craft routes requests:
+ # http://craftcms.com/docs/routing
+ #}
+
+{% extends "_layout" %}
+
+{% block content %}
+<div id="home">
+	<main>
+		<div id="hero">
+			<img src="assets/img/logo.png">
+		</div>
+		<div id="top-blurb" class="row">
+			<div>
+				<h1>Award Winning<br> B2B Business Strategy &amp; Marketing</h1>
+				<p><b>Business to business marketing is fundamentally different.</b></p>
+				<p>Between companies and their downstream markets, there's a complex landscape of partners and capabilities determine success or failure. Realising  your product and service promise requires engagement: an expert alignment of strategy, communications and execution.</p>
+				<p><b>That's where we come in.</b></p>
+			</div>
+		</div>
+		<div id="top-boxes">
+			<div class="row clearfix">
+				<div class="small-8">
+					<h2>Industry Transformation</h2>
+				</div>
+				<div class="small-4">
+					<h2>Business Growth</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="small-4">
+					<h2>Franchising<br>Businsess<br>Development</h2>
+				</div>
+				<div class="small-8">
+					<h2>Marketing Transformation</h2>
+				</div>
+			</div>
+		</div>
+		<div id="middle-blurb" class="row">
+			<div>
+				<h2>Our Work</h2>
+				<p>Traffic has the business and marketing specialists to help companties develop and implement world class growth programmes</p>
+				<button>Click through to find out more</button>
+			</div>
+		</div>
+		<div id="middle-boxes">
+			<div class="row clearfix">
+				<div class="small-4">
+					<h2>Portfolio</h2>
+				</div>
+				<div class="small-4">
+					<a href="{{ baseUrl }}clients"><h2>Clients</h2></a>
+				</div>
+				<div class="small-4">
+				<!-- <a href="{{ baseUrl }}news">Happening Now</a> -->
+					<a href="{{ baseUrl }}awards"><h2>Awards</h2></a>
+				</div>
+			</div>
+		</div>
+		<div id="our-people">
+			<div>
+				<h2>Our People</h2>
+				<div class="row">
+					<div class="small-3">
+						<img src="assets/img/Traffic-Staff-2012-Barry-Bloomfield.jpg" alt="Barry Bloomfield">
+						<span class="fade-caption">
+							<h6>Barry Bloomfield</h6>
+						</span>
+					</div>
+					<div class="small-3">
+						<img src="assets/img/Traffic-Staff-2012-Chris-Caiger.jpg" alt="Chris">
+						<span>
+							<h6>Chris Caiger</h6>
+						</span>
+					</div>
+					<div class="small-3">
+						<img src="assets/img/Traffic-Staff-2012-Jon-Bridge.jpg" alt="Jon">
+						<span>
+							<h6>Jon Bridge</h6>
+						</span>
+					</div>
+					<!-- <div class="small-2">
+						<img src="assets/img/Traffic-Staff-2012-Richard-Barnett.jpg" alt="Richard">
+						<span>
+							<h6>Richard Barnett</h6>
+						</span>
+					</div> -->
+					<div class="small-3">
+						<img src="assets/img/Traffic-Staff-2015-BW-Graem.jpg" alt="Graeme">
+						<span>
+							<h6>Graeme Nicol</h6>
+						</span>
+					</div>
+					<div class="small-3">
+						<img src="assets/img/Traffic-Staff-2015-BW-Gareth.jpg" alt="Gareth">
+						<span>
+							<h6>Gareth Poley</h6>
+						</span>
+					</div>
+				
+					<div class="small-3">
+						<img src="assets/img/Traffic-Staff-2015-BW-Matt.jpg" alt="Matt">
+						<span>
+							<h6>Matt Steele</h6>
+						</span>
+					</div>
+					<div class="small-3">
+						<img src="assets/img/Traffic-Staff-2015-BW-Nicole-James.jpg" alt="Nicole">
+						<span>
+							<h6>Nicole James</h6>
+						</span>
+					</div>
+					<div class="small-3">
+						<img src="assets/img/Traffic-Staff-2012-Scott-Espie.jpg" alt="Scott">
+						<span><h6>Scott Espie</h6></span>
+					</div>
+					<div class="small-3">
+						<img src="assets/img/Traffic-Staff-2015-BW-Heidi.jpg" alt="Heidi">
+						<span><h6>Heidi Cone</h6></span>
+					</div>
+					<div class="small-3">
+						<img src="assets/img/Traffic-Staff-2015-BW-Rebecca-Sayle.jpg" alt="Rebecca">
+						<span><h6>Rebecca Sayle</h6></span>
+					</div>
+					<div class="small-3">
+						<img src="assets/img/Traffic-Staff-2015-BW-Lluvia-Games.jpg" alt="Lluvia">
+						<span><h6>Lluvia Gamez</h6></span>
+					</div>
+				
+					<div class="small-3">
+						<img src="assets/img/Traffic-Staff-2015-BW-Rebecca-Cox.jpg" alt="Rebecca">
+						<span><h6>Rebecca Cox</h6></span>
+					</div>
+					<div class="small-3">
+						<img src="assets/img/Traffic-Staff-2015-BW-James.jpg" alt="James">
+						<span><h6>James Ong</h6></span>
+					</div>
+					<div class="small-3">
+						<img src="assets/img/Traffic-Staff-2015-BW-Shon.jpg" alt="Shon">
+						<span><h6>Shon Sumeet</h6></span>
+					</div>
+					<div class="small-3">
+						<img src="assets/img/Traffic-Staff-2012-Alice-Kong.jpg" alt="Alice">
+						<span><h6>Alice Kong</h6></span>
+					</div>
+					<div class="small-3">
+						<img src="assets/img/Traffic-Staff-2015-BW-Alex.jpg" alt="Alex">
+						<span><h6>Alex Murdoch</h6></span>
+					</div>
+					<!-- <div class="small-2">
+						<img src="assets/img/Traffic-Staff-2012-Stephanie-Matheson.jpg" alt="Stephanie">
+						<span><h6>Stephania Matheson</h6></span>
+					</div> -->
+				</div>
+			</div>
+		</div>
+		<div id="contact">
+			<div class="form">
+				<div class="form-inner">
+					<h2>Contact Us</h2>
+					<label for="c1">First Name</label>
+					<input type="text" name="firstname" id="c1">
+					<label for="c2">Last Name</label>
+					<input type="text" name="lastname" id="c2">
+					<label for="c3">Email Address</label>
+					<input type="email" name="email" id="c3">
+					<label for="c4">Phone Number</label>
+					<input type="tel" name="phone" id="c4">
+					<label for="c5">Subject</label>
+					<input type="text" name="subject" id="c5">
+					<label for="c6">Enquiry</label>
+					<textarea id="c5"></textarea>
+					<input class="button" type="submit" name="submit">
+				</div>
+			</div>
+			<div class="hours" itemscope itemtype="http://www.traffic.net.nz/">
+				<div>
+					<h4>Monday-Friday</h4>
+					<p>8:30am-5:30pm</p>
+				</div>
+				<div>
+					<h4>Call us</h4>
+					<p itemprop="telephone"> <a a href="tel:+64093930670">(09) 303 0670</a></p>
+				</div>
+				<div>
+					<h4>Pop in for a coffee</h4>
+					<address itemprop="streetAddress">
+						<p>287-289 Parnell Road, Parnell</p>
+						<p>Auckland, 1052</p>
+					</address>
+				</div>
+				<div>
+					<h4>Send us nice things</h4>
+					<p>PO Box 37-941, Parnell</p>
+					<p>Auckland, New Zealand, 1151</p>
+				</div>
+			</div>
+		</div>
+		<div id="map">
+			
+			<iframe src="http://mapbuildr.com/frame/zr2q02" frameborder="0" height="400" width="100%"></iframe>
+		</div>
+	</main>
+	<!-- <h1>{{ entry.title }}</h1>
+
+	{{ entry.body }}
+
+	<h2>Recent News</h2>
+	<ul>
+		{% for entry in craft.entries.section('news').limit(5).find() %}
+			<li><a href="{{ entry.url }}">{{ entry.title }}</a></li>
+		{% endfor %}
+	</ul> -->
+</div>
+{% endblock %}

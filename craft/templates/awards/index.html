@@ -1,0 +1,119 @@
+{#
+ # News index template
+ # -------------------
+ #
+ # This template is loaded whenever http://example.com/news is
+ # requested, because it is located at news/index.html in your
+ # craft/templates/ folder.
+ #
+ # See this page for more details on how Craft routes requests:
+ # http://craftcms.com/docs/routing
+ #}
+
+{% extends "_layout" %}
+{% set title = "Awards" %}
+
+{% block content %}
+<div id="awards-page">
+	<main>
+		<div class="sub-heading">
+			<h1>Awards</h1>
+			<p>Traffic has been recognised as a market leader with the following national &amp; international awards.</p>
+		</div>
+		<div class="awards clearfix">
+		<!-- <div> -->
+			<div>
+				<div  class="img-wrap">
+					<img src="assets/img/2015-marketing.png">
+				</div>
+				<h5>New Zealand Marketing Awards: Winner</h5>
+				<h6>Category: Mailshop Business Marketing Award</h6>
+				<p>Refresh Renovations</p>
+				<p>2015</p>
+			</div>
+			<div>
+				<div  class="img-wrap">
+					<img src="assets/img/2015-nz-franchise.png">
+				</div>
+				<h5>New Zealand Franchise Awards: Winner</h5>
+				<h6>Category: Best Emerging System</h6>
+				<p>Refresh Renovations</p>
+				<p>2015</p>
+			</div>
+			<div>
+				<div class="img-wrap">
+					<img src="assets/img/2015-fast50.png">
+				</div>
+				<h5>Deloitte Fast 50 Awards: Placed 28th</h5>
+				<h6>Category: Top 50 fastest growing companies</h6>
+				<p>Refresh Renovations</p>
+				<p>2014</p>
+			</div>
+			<div>
+				<div class="img-wrap">
+					<img src="assets/img/2013-interactive.png">
+				</div>
+				<h5>Interactive Media Award: Best in Class</h5>
+				<h6>Category: Website (Building/Construction)</h6>
+				<p>Refresh Renovations</p>
+				<p>2013</p>
+			</div>
+			<div>
+				<div class="img-wrap">
+					<img src="assets/img/2011-nzmarketing.png">
+				</div>
+				<h5>New Zealand Marketing Awards: Winner</h5>
+				<h6>Category: Mailshop Business Marketing Award</h6>
+				<p>Marine Industrial Design</p>
+				<p>2011</p>
+			</div>
+			<div>
+				<div class="img-wrap">
+					<img src="assets/img/2011-summit-platinum2.png">
+				</div>
+				<h5>Summit International Awards: Platinum</h5>
+				<h6>Category: Business to Business Service</h6>
+				<p>Marine Industrial Design</p>
+				<p>2011</p>
+			</div>
+			<div>
+				<div class="img-wrap">
+					<img src="assets/img/2011-summit-bronze.png">
+				</div>
+				<h5>Summit International Awards: Bronze</h5>
+				<h6>Project: Consumer Magazine Campaign</h6>
+				<p>Rinnai</p>
+				<p>2011</p>
+			</div>	
+			<div>
+				<div class="img-wrap">
+					<img src="assets/img/2011-summit-gold.png">
+				</div>
+				<h5>Summit International Awards: Gold</h5>
+				<h6>Project: Axxis Magazine Campaign</h6>
+				<p>New Zealand Street</p>
+				<p>2011</p>
+			</div>
+			<div>
+				<div class="img-wrap">
+					<img src="assets/img/2012-summit-platinum.png">
+				</div>
+				<h5>Summit International Awards: Platinum</h5>
+				<h6>Category: Marketing Effectiveness</h6>
+				<p>Refresh Renovations</p>
+				<p>2012</p>
+			</div>
+		</div>
+	</main>
+</div>
+<!-- 	<h1>Awards</h1>
+
+	{% for entry in craft.entries.section('awards').find() %}
+		<article>
+			<h3><a href="{{ entry.url }}">{{ entry.title }}</a></h3>
+			<p>Posted on {{ entry.postDate.format('F d, Y') }}</p>
+			{{ entry.body.getPage(1) }}
+			<p><a href="{{ entry.url }}">Continue reading</a></p>
+		</article>
+	{% endfor %}
+ -->{% endblock %}

@@ -1,0 +1,169 @@
+{#
+ # News index template
+ # -------------------
+ #
+ # This template is loaded whenever http://example.com/news is
+ # requested, because it is located at news/index.html in your
+ # craft/templates/ folder.
+ #
+ # See this page for more details on how Craft routes requests:
+ # http://craftcms.com/docs/routing
+ #}
+
+{% extends "_layout" %}
+{% set title = "Clients" %}
+
+{% block content %}
+<div id="clients-page">
+	<main>
+		<div class="sub-heading">
+			<h1>Clients</h1>
+			<p>Traffic works with established brands and emerging leaders within technical and industrial markets</p>
+		</div>
+		<div class="awards clearfix">
+			<div>
+				<div  class="img-wrap">
+					<img src="assets/img/clients/biform-logo-cmyk.png">
+				</div>
+			</div>
+			<div>
+				<div  class="img-wrap">
+					<img src="assets/img/clients/branz.png">
+				</div>
+			</div>
+			<div>
+				<div  class="img-wrap">
+					<img src="assets/img/clients/test-hover-outside-elements.png">
+				</div>
+			</div>
+			<div>
+				<div  class="img-wrap">
+					<img src="assets/img/clients/Dulux-logo.png">
+				</div>
+			</div>
+			<div>
+				<div  class="img-wrap">
+					<img src="assets/img/clients/Easysteel-logo-151-Black.png">
+				</div>
+			</div>
+			<div>
+				<div  class="img-wrap">
+					<img src="assets/img/clients/firth.gif">
+				</div>
+			</div>
+			<div>
+				<div  class="img-wrap">
+					<img src="assets/img/clients/Global-Security-Logo-Stacked-PMS021.png">
+				</div>
+			</div>
+			<div>
+				<div  class="img-wrap">
+					<img src="assets/img/clients/Gulf-Logo-CMYK-Horizontal-Black-text-no-shadow.png">
+				</div>
+			</div>
+			<div>
+				<div  class="img-wrap">
+					<img src="assets/img/clients/JNL-logo-green.png">
+				</div>
+			</div>
+			<div>
+				<div  class="img-wrap">
+					<img src="assets/img/clients/Link-Logo-CMYK.png">
+				</div>
+			</div>
+			
+			<div>
+				<div  class="img-wrap">
+					<img src="assets/img/clients/MSD.png">
+				</div>
+			</div>
+			<div>
+				<div  class="img-wrap">
+					<img src="assets/img/clients/MID-MAIN-LOGOCMYK-Blue.png">
+				</div>
+			</div>
+			<div>
+				<div  class="img-wrap">
+					<img src="assets/img/clients/Nalco-CMYK.png">
+				</div>
+			</div>
+			<div>
+				<div  class="img-wrap">
+					<img src="assets/img/clients/nz-steel.png">
+				</div>
+			</div>
+			<div>
+				<div  class="img-wrap">
+					<img src="assets/img/clients/ramset.png">
+				</div>
+			</div>
+			<div>
+				<div  class="img-wrap">
+					<img src="assets/img/clients/Refresh-RENNOVATIONS-CMYK.png">
+				</div>
+			</div>
+			<div>
+				<div  class="img-wrap">
+					<img src="assets/img/clients/Rinnai.png">
+				</div>
+			</div>
+			<div>
+				<div  class="img-wrap">
+					<img src="assets/img/clients/Sharp-CMYK.png">
+				</div>
+			</div>
+			<div>
+				<div  class="img-wrap">
+					<img src="assets/img/clients/structurflex.png">
+				</div>
+			</div>
+			<div>
+				<div  class="img-wrap">
+					<img src="assets/img/clients/tenon.png">
+				</div>
+			</div>
+			
+			<div>
+				<div  class="img-wrap">
+					<img src="assets/img/clients/Trak-Group-Logo-2014.png">
+				</div>
+			</div>
+			<div>
+				<div  class="img-wrap">
+					<img src="assets/img/clients/Trojan-Portrait-Logo.png">
+				</div>
+			</div>
+			<div>
+				<div  class="img-wrap">
+					<img src="assets/img/clients/USG_Boral_Logo_Tagline_Stacked_CMYK.png">
+				</div>
+			</div>
+			<div>
+				<div  class="img-wrap">
+					<img src="assets/img/clients/viridian.png">
+				</div>
+			</div>
+			<div>
+				<div  class="img-wrap">
+					<img src="assets/img/clients/waterware.png">
+				</div>
+			</div>
+			<div>
+				<div  class="img-wrap">
+					<img src="assets/img/clients/Zones-Logo-CMYK-V4.png">
+				</div>
+			</div>
+		</div>
+	</main>
+</div>
+<!-- 	<h1>Awards</h1>
+
+	{% for entry in craft.entries.section('awards').find() %}
+		<article>
+			<h3><a href="{{ entry.url }}">{{ entry.title }}</a></h3>
+			<p>Posted on {{ entry.postDate.format('F d, Y') }}</p>
+			{{ entry.body.getPage(1) }}
+			<p><a href="{{ entry.url }}">Continue reading</a></p>
+		</article>
+	{% endfor %}
+ -->{% endblock %}

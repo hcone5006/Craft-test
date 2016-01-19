@@ -1,0 +1,226 @@
+//------------------------------------Repeating Patterns----------------------------------------
+*{
+	@extend .box;
+}
+
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
+
+h1, h2, h3, h4, h5, h6, p, a{
+	font-family: $font;
+}
+h1{
+	@extend .h1-font;
+}
+
+h2{
+	@extend .h2-font;
+}
+
+h3{
+
+}
+
+p{
+	font-weight: 300;
+	font-size:14px;
+}
+
+html, body, main{ height:100%;}
+
+button{
+	background-color:transparent;
+	border: 1px solid $dark-color;
+	padding: 1.5em 2em;
+	color: $dark-color;
+	text-transform:uppercase;
+	box-shadow:0 0px 0 rgba(255, 255, 255, 0.5) inset;
+	margin:0 auto;
+	display:block;
+	font-weight:300;
+	//@extend .transition;
+	&:hover, &:active, &:focus{
+		background-color:transparent;
+		border: 1px solid white;
+		padding: 1.5em 2em;
+		color: white;
+		text-transform:uppercase;
+		box-shadow:0 0px 0 rgba(255, 255, 255, 0.5) inset;
+	}
+}
+
+header{
+	position:absolute;
+	width:100%;
+}
+.page-wrapper{
+	position:relative;
+}
+// nav{
+// 		position:relative;
+// 		li{
+// 			a{
+// 				color:$dark-color;
+// 				//font-weight: 300;
+// 				&:hover, &:active, &:focus{
+// 					color: $highlight-color;
+// 				}
+// 			}
+// 		} 
+// 	} 
+
+
+
+nav{
+	position:relative;
+	width:100%;
+	li{
+		float:right;
+		list-style-type:none;
+		display: inline-block;
+		padding: 2%;
+		line-height: 16px;
+		a{
+			color:$dark-color;
+			font-weight: 400;
+			text-transform: uppercase;
+			font-size: 14px;
+			padding-bottom: 15px;
+			@include transition(1s);
+			&:hover, &:active, &:focus{
+				color:$highlight-color;
+			}
+		}
+	}
+}
+
+#footer{
+	background-color:$dark-color;
+	color:$light-color;
+	font-size:10px;
+	padding: 10px 5%;
+	a{
+		color:white;
+		&:hover{
+			color:$highlight-color;
+		}
+	}
+}
+//------------------------------------Awards and Clients Page----------------------------------------
+#awards-page, #clients-page{
+	padding-top:120px;
+	.sub-heading{
+		margin:20px auto 50px;
+		text-align: center;
+		h1{
+			padding-bottom:0;
+		}
+		p{
+			font-size: 14px;
+			color: $mid-color;
+			max-width: 350px;
+			margin:0 auto;
+			font-weight: 400;
+			line-height: 17px;
+		}
+	}
+	.awards{
+		max-width: 62.5em;
+		width: 80%;
+		margin: 0 auto 50px;
+		text-align: center;
+		& > div{
+			display: inline-block;
+			@extend .box;
+			.img-wrap{
+				width:100%;
+				text-align: center;
+			}
+			img{
+				max-width: 70%;
+				max-height: 90%;
+				margin: 0 auto 10px;
+				display: inline;
+				vertical-align: middle;
+				@include transition(.6s);
+				&:hover, &:active, &:focus{
+					transform: scale(1.05);
+				}
+			}
+			
+			
+		}
+	}
+}
+
+//Awards page thumbnails
+#awards-page{
+	& > p{
+		font-size: 12px;
+		&:last-child{
+			margin-bottom:10px;
+		}
+	}
+	.awards > div{
+		width: 32.333%;
+		padding: 20px 2.4%;
+		h5, h6, p{
+			font-size: 10px;
+			margin: 0;
+			text-align: center;
+		}
+		h5{
+			font-weight: 400;
+		}
+		h6{
+			font-weight: 200;
+		}
+		
+		.img-wrap{
+			height: 170px;
+			line-height: 170px;
+		}
+	}
+} 
+
+//Clients page thumbnails
+#clients-page{
+	.awards{
+		& > div{
+			width: 19%;
+			padding: 10px 0;
+			.img-wrap{
+				height: 120px;
+				line-height: 120px;
+			}
+			img{
+				margin:0 auto;
+			}
+			&:nth-child(11){
+				// border:1px solid lime;
+				width: 39%;
+				img{
+					max-width:80%;
+				}
+			}
+			&:nth-child(15), &:nth-child(16), &:nth-child(17), &:nth-child(18){
+				// border:1px solid lime;
+				width: 24%;
+				img{
+					// max-width:80%;
+				}
+			}
+		} 
+	} 
+}

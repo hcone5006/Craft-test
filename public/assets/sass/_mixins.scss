@@ -1,0 +1,45 @@
+//------------------------------------Mixins----------------------------------------
+
+.h1-font{
+	font-family: $font;
+	font-size: 22px;
+	font-weight: 400;
+	text-transform:uppercase;
+	padding-bottom:22px;
+}
+.h2-font{
+	font-family: $font;
+	font-size: 22px;
+	font-weight: 400;
+	text-transform:uppercase;
+}
+.box {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.fit{
+  	width: -webkit-fit-content;
+  	width: -moz-fit-content;
+  	width: fit-content;
+}
+.row-height{
+	height:30vh;
+	height: 300px;
+}
+
+@mixin transition($time){
+    -webkit-transition: all $time ease-out;
+  	-moz-transition: all $time ease-out;
+  	-o-transition: all $time ease-out;
+  	transition: all $time ease-out;
+}
+
+@mixin vertical-align($position: relative) {
+  position: $position;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}

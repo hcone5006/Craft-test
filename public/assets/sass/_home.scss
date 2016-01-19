@@ -1,0 +1,300 @@
+//------------------------------------Home Page----------------------------------------
+#home{
+	nav{
+		position:absolute;
+		li{
+			a{
+				color:white;
+				//font-weight: 300;
+				&:hover, &:active, &:focus{
+					color: $highlight-color;
+				}
+			}
+		} 
+	} 
+}
+#hero{
+	height:100vh;
+	height: 100%;
+	width:100%;
+	background: $dark-color url("../img/hero-img.png") center center / cover no-repeat; 
+	img{
+		padding: 30vh 0;
+		padding: 25% 0;
+		width: 30%;
+		margin:0 auto;
+		display:block;
+	}
+}
+#top-blurb{
+	background-image: url("../img/fish.png");
+	background-position: 96% 4%;
+	background-size: 20%;
+	background-repeat:no-repeat;
+	b{
+		font-weight:400;
+	}
+	//height:70vh;
+	div{
+		max-width: 568px;
+		margin:16% auto;
+		h1, p{
+			color: $dark-color;
+			text-align: center;
+		}
+	}
+}
+#top-boxes{
+	.row{
+		max-width: none;
+		@extend .row-height;
+		div{
+			display: inline-block;
+			float:left;
+			height:100%;
+			text-align:center;
+			h2{
+				font-weight:300;
+				color:white;
+				@include vertical-align();
+			}
+		}
+		&:first-child{
+			.small-8{
+				background-color: $dark-color;
+			}
+			.small-4{
+				background-color: $highlight-color;
+			}
+		}
+		&:nth-child(2){
+			.small-4{
+				background-color: $highlight-color;
+			}
+			.small-8{
+				background-color: $highlight-color2;
+				h2{
+					color: $dark-color;
+				}
+			}
+		}
+	}
+}
+#middle-blurb{
+	background-image: url("../img/orange-background.jpg");
+	background-size:cover;
+	margin:0;
+	max-width:none;
+		div{
+			max-width: $small-text-box;
+			margin:16% auto;
+		h2, p{
+			color: $dark-color;
+			text-align: center;
+		}
+		h2{
+			margin-bottom:40px;
+		}
+	}
+}
+
+#middle-boxes{
+
+	.row{
+		@extend .row-height;
+		max-width:none;
+		div{
+			display: inline-block;
+			float:left;
+			height:100%;
+			text-align:center;
+			h2{
+				color: white;
+				font-weight: 200;
+				padding:22% 0;
+				@include vertical-align();
+			}
+		}
+		.small-4{
+			&:first-child{
+				background-color: $highlight-color;
+			}
+			&:nth-child(2){
+				background-color: $highlight-color2;
+				h2{
+					color: $dark-color;
+				}
+			}
+			&:nth-child(3){
+				background-color: $dark-color;
+			}
+		}
+	}
+}
+
+#our-people{
+	text-align:center;
+	&>div{
+		margin:5% 20%;
+		h2{
+			color: $dark-color;
+			text-align: center;
+			margin-bottom:40px;
+		}
+		.row{
+			.small-3{
+				display:inline-block;
+				overflow: hidden;
+				float:left;
+				// background-color: $light-color;
+				h6{
+					margin-top:0;
+					font-weight:lighter;
+					font-size: 12px;
+					text-align: center;
+					margin:88% 0 0;
+					padding:3px 0;
+					//background-color:#212022;
+					//background-color: rgba(64, 62, 65, .4);
+					color:black;
+					letter-spacing: 0.5px;
+				}
+				span{
+					z-index: 10;
+					opacity: 0;
+					position: absolute;
+					width:100%;
+					// height:100%;
+					left:0;
+					bottom:0;
+					//top:0;
+					//background-color: rgba(65, 64, 66, 0.7);
+					@include transition(1s);
+				}
+				img{
+					z-index: 0;
+					opacity:1;
+					width:100%;
+					@include transition(1s);
+				}
+				&:hover, &:active, &:focus{
+					// border:1px solid red;
+					// background-color: $light-color;
+					img{
+						transform: scale(1.05);
+						// background-color: $light-color;
+						opacity:.6;
+					}
+					span{
+						// background-color: rgba(64, 62, 65, 0.4);
+						// background-color: rgba(255, 255, 255, 0.6);
+						opacity:1;
+						h6{
+							//background-color: $mid-color;
+							// padding:90% 0;
+							//color: white;
+							// color: $dark-color;
+						}
+					}
+				}
+				// &:first-child{
+				// 	background-image: url('img/Traffic-Staff-2012-Barry-Bloomfield.jpg');
+				// 	background-size:100%;
+				// }
+			}
+		}
+	}
+}
+#contact{
+	height:540px;
+}
+.form{
+	float:left;
+	width: 70%;
+	height:100%;
+	background-color: $dark-color;
+	color:white;
+	padding: 6% 5%;
+	h2{
+		color:$light-color;
+		font-weight:300;
+	}
+	label{
+		color:$light-color;
+		font-weight:lighter;
+		width: 15%;
+		display: inline-block;
+	}
+	textarea, input{
+		background: $dark-color;
+		//border-radius: 5px;
+		border: $dark-color;
+		width: 84%;
+		display: inline-block;
+		color:$light-color;
+		font-weight:300;
+		&:hover, &:focus, &:active{
+			background-color: $dark-color;
+			border:1px solid $light-color;
+			color: $light-color;
+		}
+	}
+	.button{
+		background-color: $dark-color;
+		border: 1px solid $light-color;
+		font-weight:300;
+		color: $light-color;
+		box-shadow:0px 0px 0px red;
+		width:auto;
+		//border-radius:5px;
+		&:hover, &:focus, &:hover{
+			color:white;
+			border:1px solid white;
+			background-color: $dark-color;
+		}
+	}
+}
+.hours{
+	float:left;
+	width: 30%;
+	height:100%;
+	background-color: $highlight-color2;
+	padding: 6% 5%;
+	h4, p, a{
+		color: $dark-color;
+		text-align:center;
+	}
+	h4{
+		font-weight:300;
+	}
+	p{
+		margin-bottom:0;
+	}
+	address{
+		font-style: normal;
+		font-weight:300;
+	}
+}
+#map{
+	background-color:$dark-color;
+	// background-image: url("../img/map.jpg");
+	// background-size:cover;
+	//height:300px;
+
+}
+
+ #traffic-map {
+    height:400px;
+    width:550px;
+}
+.gm-style-iw * {
+    display: block;
+    width: 100%;
+}
+.gm-style-iw h4, .gm-style-iw p {
+    margin: 0;
+    padding: 0;
+}
+.gm-style-iw a {
+    color: #4272db;
+}

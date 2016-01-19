@@ -1,0 +1,23 @@
+// Traffic Redesign
+// font-family: 'Roboto', sans-serif;
+
+//------------------------------------Variables----------------------------------------
+$highlight-color:#f47920;
+$highlight-color2:#f6eb16;
+$light-color:#cbcbcd;
+$dark-color:#414042;
+// $mid-color:#3a3a3c;
+$mid-color:#8c8a8f;
+
+
+$font:'Roboto', sans-serif;
+
+$small-text-box: 458px;
+
+
+//------------------------------------Imports----------------------------------------
+
+@import 'mixins';
+@import 'repeat';
+@import 'home';
+@import 'media';
