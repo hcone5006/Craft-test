@@ -108,97 +108,22 @@ nav {
     #footer a:hover {
       color: #f47920; }
 
-#awards-page, #clients-page {
-  padding-top: 120px; }
-  #awards-page .sub-heading, #clients-page .sub-heading {
-    margin: 20px auto 50px;
-    text-align: center; }
-    #awards-page .sub-heading h1, #clients-page .sub-heading h1 {
-      padding-bottom: 0; }
-    #awards-page .sub-heading p, #clients-page .sub-heading p {
-      font-size: 14px;
-      color: #8c8a8f;
-      max-width: 350px;
-      margin: 0 auto;
-      font-weight: 400;
-      line-height: 17px; }
-  #awards-page .awards, #clients-page .awards {
-    max-width: 62.5em;
-    width: 80%;
-    margin: 0 auto 50px;
-    text-align: center; }
-    #awards-page .awards > div, #clients-page .awards > div {
-      display: inline-block; }
-      #awards-page .awards > div .img-wrap, #clients-page .awards > div .img-wrap {
-        width: 100%;
-        text-align: center; }
-      #awards-page .awards > div img, #clients-page .awards > div img {
-        max-width: 70%;
-        max-height: 90%;
-        margin: 0 auto 10px;
-        display: inline;
-        vertical-align: middle;
-        -webkit-transition: all 0.6s ease-out;
-        transition: all 0.6s ease-out; }
-        #awards-page .awards > div img:hover, #awards-page .awards > div img:active, #awards-page .awards > div img:focus, #clients-page .awards > div img:hover, #clients-page .awards > div img:active, #clients-page .awards > div img:focus {
-          -webkit-transform: scale(1.05);
-              -ms-transform: scale(1.05);
-                  transform: scale(1.05); }
-
-#awards-page > p {
-  font-size: 12px; }
-  #awards-page > p:last-child {
-    margin-bottom: 10px; }
-#awards-page .awards > div {
-  width: 32.333%;
-  padding: 20px 2.4%; }
-  #awards-page .awards > div h5, #awards-page .awards > div h6, #awards-page .awards > div p {
-    font-size: 10px;
-    margin: 0;
-    text-align: center; }
-  #awards-page .awards > div h5 {
-    font-weight: 400; }
-  #awards-page .awards > div h6 {
-    font-weight: 200; }
-  #awards-page .awards > div .img-wrap {
-    height: 170px;
-    line-height: 170px; }
-
-#clients-page .awards > div {
-  width: 19%;
-  padding: 10px 0; }
-  #clients-page .awards > div .img-wrap {
-    height: 120px;
-    line-height: 120px; }
-  #clients-page .awards > div img {
-    margin: 0 auto; }
-  #clients-page .awards > div:nth-child(11) {
-    width: 39%; }
-    #clients-page .awards > div:nth-child(11) img {
-      max-width: 80%; }
-  #clients-page .awards > div:nth-child(15), #clients-page .awards > div:nth-child(16), #clients-page .awards > div:nth-child(17), #clients-page .awards > div:nth-child(18) {
-    width: 24%; }
-
-#home nav {
-  position: absolute; }
-  #home nav li a {
-    color: white; }
-    #home nav li a:hover, #home nav li a:active, #home nav li a:focus {
-      color: #f47920; }
-
 #hero {
+  height: 900px;
   height: 100vh;
-  height: 100%;
   width: 100%;
+  display: table-cell;
+  vertical-align: middle;
   background: #414042 url("../img/hero-img.png") center center/cover no-repeat; }
   #hero img {
-    padding: 30vh 0;
-    padding: 25% 0;
+    vertical-align: middle;
     width: 30%;
     margin: 0 auto;
     display: block; }
 
 #top-blurb {
+  height: 600px;
+  height: 70vh;
   background-image: url("../img/fish.png");
   background-position: 96% 4%;
   background-size: 20%;
@@ -207,7 +132,7 @@ nav {
     font-weight: 400; }
   #top-blurb div {
     max-width: 568px;
-    margin: 16% auto; }
+    margin: 19% auto; }
     #top-blurb div h1, #top-blurb div p {
       color: #414042;
       text-align: center; }
@@ -245,7 +170,7 @@ nav {
   max-width: none; }
   #middle-blurb div {
     max-width: 458px;
-    margin: 16% auto; }
+    margin: 19% auto; }
     #middle-blurb div h2, #middle-blurb div p {
       color: #414042;
       text-align: center; }
@@ -322,7 +247,8 @@ nav {
         opacity: 1; }
 
 #contact {
-  height: 540px; }
+  height: 900px;
+  height: 100vh; }
 
 .form {
   float: left;
@@ -330,7 +256,10 @@ nav {
   height: 100%;
   background-color: #414042;
   color: white;
-  padding: 6% 5%; }
+  padding: 13% 5%; }
+  .form .form-inner {
+    margin: 0 auto;
+    max-width: 42.54rem; }
   .form h2 {
     color: #cbcbcd;
     font-weight: 300; }
@@ -367,7 +296,10 @@ nav {
   width: 30%;
   height: 100%;
   background-color: #f6eb16;
-  padding: 6% 5%; }
+  padding: 13% 5%; }
+  .hours .hours-inner {
+    max-width: 20rem;
+    margin: 0 auto; }
   .hours h4, .hours p, .hours a {
     color: #414042;
     text-align: center; }
@@ -397,6 +329,77 @@ nav {
 .gm-style-iw a {
   color: #4272db; }
 
+#awards-page, #clients-page {
+  padding-top: 120px; }
+  #awards-page .sub-heading, #clients-page .sub-heading {
+    margin: 20px auto 50px;
+    text-align: center; }
+    #awards-page .sub-heading h1, #clients-page .sub-heading h1 {
+      padding-bottom: 0; }
+    #awards-page .sub-heading p, #clients-page .sub-heading p {
+      font-size: 14px;
+      color: #8c8a8f;
+      max-width: 350px;
+      margin: 0 auto;
+      font-weight: 400;
+      line-height: 17px; }
+  #awards-page .awards, #clients-page .awards {
+    max-width: 62.5em;
+    width: 80%;
+    margin: 0 auto 50px;
+    text-align: center; }
+    #awards-page .awards > div, #clients-page .awards > div {
+      display: inline-block; }
+      #awards-page .awards > div .img-wrap, #clients-page .awards > div .img-wrap {
+        width: 100%;
+        text-align: center; }
+      #awards-page .awards > div img, #clients-page .awards > div img {
+        max-width: 70%;
+        max-height: 90%;
+        margin: 0 auto 10px;
+        display: inline;
+        vertical-align: middle;
+        -webkit-transition: all 0.6s ease-out;
+        transition: all 0.6s ease-out; }
+        #awards-page .awards > div img:hover, #awards-page .awards > div img:active, #awards-page .awards > div img:focus, #clients-page .awards > div img:hover, #clients-page .awards > div img:active, #clients-page .awards > div img:focus {
+          -webkit-transform: scale(1.05);
+              -ms-transform: scale(1.05);
+                  transform: scale(1.05); }
+
+#awards-page > p {
+  font-size: 12px; }
+  #awards-page > p:last-child {
+    margin-bottom: 10px; }
+#awards-page .awards > div {
+  width: 32.333%;
+  padding: 20px 2.4%; }
+  #awards-page .awards > div h5, #awards-page .awards > div h6, #awards-page .awards > div p {
+    font-size: 10px;
+    margin: 0;
+    text-align: center; }
+  #awards-page .awards > div h5 {
+    font-weight: 400; }
+  #awards-page .awards > div h6 {
+    font-weight: 200; }
+  #awards-page .awards > div .img-wrap {
+    height: 170px;
+    line-height: 170px; }
+
+#clients-page .awards > div {
+  width: 19%;
+  padding: 10px 0; }
+  #clients-page .awards > div .img-wrap {
+    height: 120px;
+    line-height: 120px; }
+  #clients-page .awards > div img {
+    margin: 0 auto; }
+  #clients-page .awards > div:nth-child(11) {
+    width: 39%; }
+    #clients-page .awards > div:nth-child(11) img {
+      max-width: 80%; }
+  #clients-page .awards > div:nth-child(15), #clients-page .awards > div:nth-child(16), #clients-page .awards > div:nth-child(17), #clients-page .awards > div:nth-child(18) {
+    width: 24%; }
+
 /** 
  * iPad with portrait orientation.
  */
@@ -416,4 +419,5 @@ nav {
 @media screen and (device-aspect-ratio: 40 / 71) {
   #hero {
     height: 500px; } }
+
 /*# sourceMappingURL=screen.css.map */

@@ -44,11 +44,11 @@
 		#footer { border-radius: 0 0 7px 7px; padding: 15px; font-size: 12px; text-align: center; }*/
 	</style>
 	<link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="{{ baseUrl }}assets/css/normalize.css" />
-	<link rel="stylesheet" href="{{ baseUrl }}assets/css/app.css" />
-	<link rel="stylesheet" href="{{ baseUrl }}assets/css/screen.css" media="all">
+	<link rel="stylesheet" href="/assets/css/normalize.css" />
+	<link rel="stylesheet" href="/assets/css/app.css" />
+	<link rel="stylesheet" href="/assets/css/screen.css" media="all">
 	<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
-	<script type="text/javascript" src="{{ baseUrl }}assets/js/vendor/custom.modernizr.js"></script>
+	<script type="text/javascript" src="/assets/js/vendor/custom.modernizr.js"></script>
 </head>
 
 <body>
@@ -58,8 +58,15 @@
 
 			<nav class="clearfix">
 				<ul>
-					<li><a href="{{ baseUrl }}news">Happening Now</a></li>
-					<li><a href="{{ siteUrl }}craft-test/public/#contact">Contact Us</a></li>
+					<li>
+						<a href="/news">Happening Now</a>
+					</li>
+					<li>
+						<a href="/#contact">Contact Us</a>
+					</li>
+					<li>
+						<a href="/">Home</a>
+					</li>
 				</ul>
 			</nav>
 		</header>
@@ -75,6 +82,6 @@
 			Copyright {{ now.year }} {{ craft.request.serverName | ucfirst }}. All rights reserved  •  Built with <a href="http://craftcms.com">Craft</a>
 		</footer>
 	</div>
-	<script src="{{ baseUrl }}assets/js/main.js"></script>
+	<script src="/assets/js/main.js"></script>
 </body>
 </html>

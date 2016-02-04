@@ -1,32 +1,37 @@
 //------------------------------------Home Page----------------------------------------
-#home{
-	nav{
-		position:absolute;
-		li{
-			a{
-				color:white;
-				//font-weight: 300;
-				&:hover, &:active, &:focus{
-					color: $highlight-color;
-				}
-			}
-		} 
-	} 
-}
+// #home{
+// 	nav{
+// 		position:absolute;
+// 		li{
+// 			a{
+// 				color:white;
+// 				//font-weight: 300;
+// 				&:hover, &:active, &:focus{
+// 					color: $highlight-color;
+// 				}
+// 			}
+// 		} 
+// 	} 
+// }
 #hero{
+	height: 900px;
 	height:100vh;
-	height: 100%;
 	width:100%;
+	display:table-cell;
+	vertical-align:middle;
 	background: $dark-color url("../img/hero-img.png") center center / cover no-repeat; 
 	img{
-		padding: 30vh 0;
-		padding: 25% 0;
+		// padding: 30vh 0;
+		// padding: 25% 0;
+		vertical-align: middle;
 		width: 30%;
 		margin:0 auto;
 		display:block;
 	}
 }
 #top-blurb{
+	height:600px;
+	height:70vh;
 	background-image: url("../img/fish.png");
 	background-position: 96% 4%;
 	background-size: 20%;
@@ -37,7 +42,7 @@
 	//height:70vh;
 	div{
 		max-width: 568px;
-		margin:16% auto;
+		margin:19% auto;
 		h1, p{
 			color: $dark-color;
 			text-align: center;
@@ -87,7 +92,7 @@
 	max-width:none;
 		div{
 			max-width: $small-text-box;
-			margin:16% auto;
+			margin:19% auto;
 		h2, p{
 			color: $dark-color;
 			text-align: center;
@@ -206,7 +211,8 @@
 	}
 }
 #contact{
-	height:540px;
+	height:900px;
+	height:100vh;
 }
 .form{
 	float:left;
@@ -214,7 +220,11 @@
 	height:100%;
 	background-color: $dark-color;
 	color:white;
-	padding: 6% 5%;
+	padding: 13% 5%;	
+	.form-inner{
+		margin:0 auto;
+		max-width: 42.54rem;
+	}
 	h2{
 		color:$light-color;
 		font-weight:300;
@@ -259,7 +269,11 @@
 	width: 30%;
 	height:100%;
 	background-color: $highlight-color2;
-	padding: 6% 5%;
+	padding: 13% 5%;
+	.hours-inner{
+		max-width:20rem;
+		margin:0 auto;
+	}
 	h4, p, a{
 		color: $dark-color;
 		text-align:center;
