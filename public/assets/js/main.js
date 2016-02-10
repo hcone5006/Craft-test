@@ -34,4 +34,13 @@ $( document ).ready(function() {
         resize();
     };
 
+	// function resize(){
+ //        var heights = window.innerHeight;
+ //        document.getElementById("middle-blurb").style.height = heights -0 + "px";
+ //    }
+ //    resize();
+ //    window.onresize = function() {
+ //        resize();
+ //    };
+
 });

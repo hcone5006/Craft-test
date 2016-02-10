@@ -29,12 +29,16 @@ h2{
 }
 
 h3{
-
+	font-size: $h3-font-size;
 }
 
 p{
 	font-weight: 300;
-	font-size:14px;
+	font-size:$p-font-size;
+}
+
+a{
+	font-size:$p-font-size;
 }
 
 html, body, main{ height:100%;}
@@ -81,7 +85,7 @@ nav{
 			color:$dark-color;
 			font-weight: 400;
 			text-transform: uppercase;
-			font-size: 14px;
+			font-size: $p-font-size;
 			padding-bottom: 15px;
 			@include transition(1s);
 			&:hover, &:active, &:focus{
@@ -94,10 +98,12 @@ nav{
 #footer{
 	background-color:$dark-color;
 	color:$light-color;
-	font-size:10px;
+	font-size:$footer-font-size;
+	line-height:$p-font-size;
 	padding: 10px 5%;
 	a{
 		color:white;
+		font-size:$footer-font-size;
 		&:hover{
 			color:$highlight-color;
 		}

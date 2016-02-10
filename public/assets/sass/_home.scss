@@ -1,18 +1,5 @@
 //------------------------------------Home Page----------------------------------------
-// #home{
-// 	nav{
-// 		position:absolute;
-// 		li{
-// 			a{
-// 				color:white;
-// 				//font-weight: 300;
-// 				&:hover, &:active, &:focus{
-// 					color: $highlight-color;
-// 				}
-// 			}
-// 		} 
-// 	} 
-// }
+
 #hero{
 	// height: 900px;
 	// height:100vh;
@@ -24,14 +11,14 @@
 		// padding: 30vh 0;
 		// padding: 25% 0;
 		vertical-align: middle;
-		width: 30%;
+		width: 60%;
 		margin:0 auto;
 		display:block;
 	}
 }
 #top-blurb{
-	height:600px;
-	height:70vh;
+	// min-height:600px;
+	// min-height:100vh;
 	background-image: url("../img/fish.png");
 	background-position: 96% 4%;
 	background-size: 20%;
@@ -41,8 +28,8 @@
 	}
 	//height:70vh;
 	div{
-		max-width: 568px;
-		margin:19% auto;
+		// width: 86%;
+		margin:25% auto;
 		h1, p{
 			color: $dark-color;
 			text-align: center;
@@ -51,12 +38,14 @@
 }
 #top-boxes{
 	.row{
+		width:100%;
 		max-width: none;
 		@extend .row-height;
 		div{
 			display: inline-block;
-			float:left;
+			// float:left;
 			height:100%;
+			height:50vh;
 			text-align:center;
 			h2{
 				font-weight:300;
@@ -66,17 +55,21 @@
 		}
 		&:first-child{
 			.small-8{
+				float:right;
 				background-color: $dark-color;
 			}
 			.small-4{
+				float:right;
 				background-color: $highlight-color;
 			}
 		}
 		&:nth-child(2){
 			.small-4{
+				float:left;
 				background-color: $highlight-color;
 			}
 			.small-8{
+				float:left;
 				background-color: $highlight-color2;
 				h2{
 					color: $dark-color;
@@ -91,20 +84,20 @@
 	margin:0;
 	max-width:none;
 		div{
-			max-width: $small-text-box;
-			margin:19% auto;
+			// max-width: $small-text-box;
+			// width: 86%;
+			margin:40% auto;
 		h2, p{
 			color: $dark-color;
 			text-align: center;
 		}
 		h2{
-			margin-bottom:40px;
+			margin-bottom:5%;
 		}
 	}
 }
 
 #middle-boxes{
-
 	.row{
 		@extend .row-height;
 		max-width:none;
@@ -112,11 +105,12 @@
 			display: inline-block;
 			float:left;
 			height:100%;
+			height:50vh;
 			text-align:center;
 			h2{
 				color: white;
 				font-weight: 200;
-				padding:22% 0;
+				// padding:22% 0;
 				@include vertical-align();
 			}
 		}
@@ -140,7 +134,7 @@
 #our-people{
 	text-align:center;
 	&>div{
-		margin:5% 20%;
+		margin:5% auto;
 		h2{
 			color: $dark-color;
 			text-align: center;
@@ -148,6 +142,7 @@
 		}
 		.row{
 			.small-3{
+				
 				display:inline-block;
 				overflow: hidden;
 				float:left;
@@ -211,16 +206,18 @@
 	}
 }
 #contact{
-	height:900px;
-	height:100vh;
+	// height:900px;
+	// height:100vh;
+}
+.form, .hours{
+	padding: 7% 0;
+	// height:70vh;
 }
 .form{
 	float:left;
 	width: 70%;
-	height:100%;
 	background-color: $dark-color;
-	color:white;
-	padding: 13% 5%;	
+	color:white;	
 	.form-inner{
 		margin:0 auto;
 		max-width: 42.54rem;
@@ -250,6 +247,7 @@
 		}
 	}
 	.button{
+		float:right;
 		background-color: $dark-color;
 		border: 1px solid $light-color;
 		font-weight:300;
@@ -267,9 +265,7 @@
 .hours{
 	float:left;
 	width: 30%;
-	height:100%;
 	background-color: $highlight-color2;
-	padding: 13% 5%;
 	.hours-inner{
 		max-width:20rem;
 		margin:0 auto;
@@ -291,10 +287,6 @@
 }
 #map{
 	background-color:$dark-color;
-	// background-image: url("../img/map.jpg");
-	// background-size:cover;
-	//height:300px;
-
 }
 
  #traffic-map {
@@ -311,4 +303,184 @@
 }
 .gm-style-iw a {
     color: #4272db;
+}
+
+//Media Queries
+@media only all and (max-width: 64em){
+	p{
+		border:3px solid pink;
+	}
+	#top-blurb, #middle-blurb, #our-people {
+		& > div {
+		    width: 86%;
+		}
+	}
+	#top-blurb, #middle-blurb{
+		& > div {
+		    margin: 25% auto;
+		}
+	}
+}
+@media only all and (max-width: 47.937em){
+	p{
+		border:1px solid yellow;
+	}
+	#our-people{
+		> div {
+			.row{
+				.small-3 {
+				    width: 25%;
+				}
+			}
+		}
+	} 
+}
+@media only all and (max-width: 38em){
+	p{
+		border:1px solid blue;
+	}
+	#hero{
+		img{
+			width:60%;
+		}
+	}
+	#middle-blurb{
+		& > div{
+			margin: 40% auto;
+		}
+	}
+	#top-blurb{
+		& > div{
+			margin: 20% auto;
+		}
+	}
+	#middle-boxes, #top-boxes{
+		.small-4, .small-8{
+			width:100%;
+		}
+	}
+	#our-people{
+		& > div{
+			width:86%;
+			margin:5% auto;
+			.row .small-3{
+				width:33.33%;
+			}
+		}
+	}
+	.form{
+		width:100%;
+		label{
+			width:28%;
+		}
+		input, textarea{
+			width:70%;
+		}
+		.button{
+			width:100%;
+		}
+	}
+	.hours{
+		width:100%;
+	}
+}
+@media only all and (max-width: 22em) { 
+	p{
+		border:1px solid lime;
+	} 
+	#our-people{
+		& > div{
+			// width:86%;
+			// margin:5% auto;
+			.row .small-3{
+				width:50%;
+			}
+		}
+	}
+	.form, .hours{
+		min-height:336px;
+		min-height: 70vh;
+		.form-inner, .hours-inner{
+			width: 86%;
+			margin: 5% auto;
+		}
+	}
+
+}
+@media only all and (min-width: 48em){
+	p{
+		border:1px solid orange;
+	}
+	#hero{
+		img{
+			width: 40%;
+		}
+	}
+	#top-blurb, #middle-blurb, #our-people {
+		& > div{
+			// border: 1px dotted lime;
+			max-width: 39.5em;
+		}
+	}
+	#top-blurb, #middle-blurb {
+		& > div{
+			margin: 20% auto;
+		}
+	}
+	#contact{
+		min-height:600px;
+		min-height:100vh;
+	}
+	.form, .hours{
+		padding: 7% 5%;
+		height:70vh;
+		.hours-inner, .form-inner{
+			// margin: 0 auto;
+		}
+	}
+	.hours{
+		width: 40%;
+	}
+	.form{
+		width: 60%;
+		label{
+			width:24%;
+		}
+		input, textarea{
+			width:74%;
+		}
+	}
+}
+@media only all and (min-width: 64em){
+	p{
+		border:1px solid red;
+	}
+	#hero{
+		img{
+			width: 30%;
+		}
+	}
+}
+
+@media only all and (min-width: 78em){
+	p{
+		border:1px solid purple;
+	}
+	#top-blurb, #middle-blurb, #our-people {
+		& > div{
+			// border: 1px dotted lime;
+			max-width: 49.5em;
+		}
+	}
+	// #contact{
+	// 	min-height:600px;
+	// 	min-height:100vh;
+	// }
+	// .form, .hours{
+	// 	padding: 7% 0;
+	// 	height:70vh;
+	// 	.hours-inner, .form-inner{
+	// 		// margin: 0 auto;
+	// 	}
+	// }
 }

@@ -1,21 +1,21 @@
-/* line 3, /Applications/MAMP/htdocs/Craft-test/public/assets/sass/_mixins.scss */
+/* line 3, ../sass/_mixins.scss */
 .h1-font, h1 {
   font-family: "Roboto", sans-serif;
-  font-size: 22px;
+  font-size: 1.7rem;
   font-weight: 400;
   text-transform: uppercase;
   padding-bottom: 22px;
 }
 
-/* line 10, /Applications/MAMP/htdocs/Craft-test/public/assets/sass/_mixins.scss */
+/* line 10, ../sass/_mixins.scss */
 .h2-font, h2 {
   font-family: "Roboto", sans-serif;
-  font-size: 22px;
+  font-size: 1.6rem;
   font-weight: 400;
   text-transform: uppercase;
 }
 
-/* line 16, /Applications/MAMP/htdocs/Craft-test/public/assets/sass/_mixins.scss */
+/* line 16, ../sass/_mixins.scss */
 .box, *, #awards-page .awards > div, #clients-page .awards > div {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -23,20 +23,20 @@
   box-sizing: border-box;
 }
 
-/* line 22, /Applications/MAMP/htdocs/Craft-test/public/assets/sass/_mixins.scss */
+/* line 22, ../sass/_mixins.scss */
 .fit {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
 }
 
-/* line 27, /Applications/MAMP/htdocs/Craft-test/public/assets/sass/_mixins.scss */
+/* line 27, ../sass/_mixins.scss */
 .row-height, #top-boxes .row, #middle-boxes .row {
   height: 30vh;
   height: 300px;
 }
 
-/* line 6, /Applications/MAMP/htdocs/Craft-test/public/assets/sass/_repeat.scss */
+/* line 6, ../sass/_repeat.scss */
 .clearfix:after {
   visibility: hidden;
   display: block;
@@ -46,40 +46,50 @@
   height: 0;
 }
 
-/* line 14, /Applications/MAMP/htdocs/Craft-test/public/assets/sass/_repeat.scss */
+/* line 14, ../sass/_repeat.scss */
 .clearfix {
   display: inline-block;
 }
 
 /* start commented backslash hack \*/
-/* line 16, /Applications/MAMP/htdocs/Craft-test/public/assets/sass/_repeat.scss */
+/* line 16, ../sass/_repeat.scss */
 * html .clearfix {
   height: 1%;
 }
 
-/* line 17, /Applications/MAMP/htdocs/Craft-test/public/assets/sass/_repeat.scss */
+/* line 17, ../sass/_repeat.scss */
 .clearfix {
   display: block;
 }
 
 /* close commented backslash hack */
-/* line 20, /Applications/MAMP/htdocs/Craft-test/public/assets/sass/_repeat.scss */
+/* line 20, ../sass/_repeat.scss */
 h1, h2, h3, h4, h5, h6, p, a {
   font-family: "Roboto", sans-serif;
 }
 
-/* line 35, /Applications/MAMP/htdocs/Craft-test/public/assets/sass/_repeat.scss */
-p {
-  font-weight: 300;
-  font-size: 14px;
+/* line 31, ../sass/_repeat.scss */
+h3 {
+  font-size: 1.4rem;
 }
 
-/* line 40, /Applications/MAMP/htdocs/Craft-test/public/assets/sass/_repeat.scss */
+/* line 35, ../sass/_repeat.scss */
+p {
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+/* line 40, ../sass/_repeat.scss */
+a {
+  font-size: 1rem;
+}
+
+/* line 44, ../sass/_repeat.scss */
 html, body, main {
   height: 100%;
 }
 
-/* line 42, /Applications/MAMP/htdocs/Craft-test/public/assets/sass/_repeat.scss */
+/* line 46, ../sass/_repeat.scss */
 button {
   background-color: transparent;
   border: 1px solid #414042;
@@ -91,7 +101,7 @@ button {
   display: block;
   font-weight: 300;
 }
-/* line 53, /Applications/MAMP/htdocs/Craft-test/public/assets/sass/_repeat.scss */
+/* line 57, ../sass/_repeat.scss */
 button:hover, button:active, button:focus {
   background-color: transparent;
   border: 1px solid white;
@@ -101,23 +111,23 @@ button:hover, button:active, button:focus {
   box-shadow: 0 0px 0 rgba(255, 255, 255, 0.5) inset;
 }
 
-/* line 63, /Applications/MAMP/htdocs/Craft-test/public/assets/sass/_repeat.scss */
+/* line 67, ../sass/_repeat.scss */
 header {
   position: absolute;
   width: 100%;
 }
 
-/* line 67, /Applications/MAMP/htdocs/Craft-test/public/assets/sass/_repeat.scss */
+/* line 71, ../sass/_repeat.scss */
 .page-wrapper {
   position: relative;
 }
 
-/* line 71, /Applications/MAMP/htdocs/Craft-test/public/assets/sass/_repeat.scss */
+/* line 75, ../sass/_repeat.scss */
 nav {
   position: relative;
   width: 100%;
 }
-/* line 74, /Applications/MAMP/htdocs/Craft-test/public/assets/sass/_repeat.scss */
+/* line 78, ../sass/_repeat.scss */
 nav li {
   float: right;
   list-style-type: none;
@@ -125,202 +135,205 @@ nav li {
   padding: 2%;
   line-height: 16px;
 }
-/* line 80, /Applications/MAMP/htdocs/Craft-test/public/assets/sass/_repeat.scss */
+/* line 84, ../sass/_repeat.scss */
 nav li a {
   color: #414042;
   font-weight: 400;
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 1rem;
   padding-bottom: 15px;
   -webkit-transition: all 1s ease-out;
   -moz-transition: all 1s ease-out;
   -o-transition: all 1s ease-out;
   transition: all 1s ease-out;
 }
-/* line 87, /Applications/MAMP/htdocs/Craft-test/public/assets/sass/_repeat.scss */
+/* line 91, ../sass/_repeat.scss */
 nav li a:hover, nav li a:active, nav li a:focus {
   color: #f47920;
 }
 
-/* line 94, /Applications/MAMP/htdocs/Craft-test/public/assets/sass/_repeat.scss */
+/* line 98, ../sass/_repeat.scss */
 #footer {
   background-color: #414042;
   color: #cbcbcd;
-  font-size: 10px;
+  font-size: 0.7rem;
+  line-height: 1rem;
   padding: 10px 5%;
 }
-/* line 99, /Applications/MAMP/htdocs/Craft-test/public/assets/sass/_repeat.scss */
+/* line 104, ../sass/_repeat.scss */
 #footer a {
   color: white;
+  font-size: 0.7rem;
 }
-/* line 101, /Applications/MAMP/htdocs/Craft-test/public/assets/sass/_repeat.scss */
+/* line 107, ../sass/_repeat.scss */
 #footer a:hover {
   color: #f47920;
 }
 
-/* line 16, /Applications/MAMP/htdocs/Craft-test/public/assets/sass/_home.scss */
+/* line 3, ../sass/_home.scss */
 #hero {
   width: 100%;
   display: table-cell;
   vertical-align: middle;
   background: #414042 url("../img/hero-img.png") center center/cover no-repeat;
 }
-/* line 23, /Applications/MAMP/htdocs/Craft-test/public/assets/sass/_home.scss */
+/* line 10, ../sass/_home.scss */
 #hero img {
   vertical-align: middle;
-  width: 30%;
+  width: 60%;
   margin: 0 auto;
   display: block;
 }
 
-/* line 32, /Applications/MAMP/htdocs/Craft-test/public/assets/sass/_home.scss */
+/* line 19, ../sass/_home.scss */
 #top-blurb {
-  height: 600px;
-  height: 70vh;
   background-image: url("../img/fish.png");
   background-position: 96% 4%;
   background-size: 20%;
   background-repeat: no-repeat;
 }
-/* line 39, /Applications/MAMP/htdocs/Craft-test/public/assets/sass/_home.scss */
+/* line 26, ../sass/_home.scss */
 #top-blurb b {
   font-weight: 400;
 }
-/* line 43, /Applications/MAMP/htdocs/Craft-test/public/assets/sass/_home.scss */
+/* line 30, ../sass/_home.scss */
 #top-blurb div {
-  max-width: 568px;
-  margin: 19% auto;
+  margin: 25% auto;
 }
-/* line 46, /Applications/MAMP/htdocs/Craft-test/public/assets/sass/_home.scss */
+/* line 33, ../sass/_home.scss */
 #top-blurb div h1, #top-blurb div p {
   color: #414042;
   text-align: center;
 }
 
-/* line 53, /Applications/MAMP/htdocs/Craft-test/public/assets/sass/_home.scss */
+/* line 40, ../sass/_home.scss */
 #top-boxes .row {
+  width: 100%;
   max-width: none;
 }
-/* line 56, /Applications/MAMP/htdocs/Craft-test/public/assets/sass/_home.scss */
+/* line 44, ../sass/_home.scss */
 #top-boxes .row div {
   display: inline-block;
-  float: left;
   height: 100%;
+  height: 50vh;
   text-align: center;
 }
-/* line 61, /Applications/MAMP/htdocs/Craft-test/public/assets/sass/_home.scss */
+/* line 50, ../sass/_home.scss */
 #top-boxes .row div h2 {
   font-weight: 300;
   color: white;
   position: relative;
-  top: 50%;
+  top: 48%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
-/* line 68, /Applications/MAMP/htdocs/Craft-test/public/assets/sass/_home.scss */
+/* line 57, ../sass/_home.scss */
 #top-boxes .row:first-child .small-8 {
+  float: right;
   background-color: #414042;
 }
-/* line 71, /Applications/MAMP/htdocs/Craft-test/public/assets/sass/_home.scss */
+/* line 61, ../sass/_home.scss */
 #top-boxes .row:first-child .small-4 {
+  float: right;
   background-color: #f47920;
 }
-/* line 76, /Applications/MAMP/htdocs/Craft-test/public/assets/sass/_home.scss */
+/* line 67, ../sass/_home.scss */
 #top-boxes .row:nth-child(2) .small-4 {
+  float: left;
   background-color: #f47920;
 }
-/* line 79, /Applications/MAMP/htdocs/Craft-test/public/assets/sass/_home.scss */
+/* line 71, ../sass/_home.scss */
 #top-boxes .row:nth-child(2) .small-8 {
+  float: left;
   background-color: #f6eb16;
 }
-/* line 81, /Applications/MAMP/htdocs/Craft-test/public/assets/sass/_home.scss */
+/* line 74, ../sass/_home.scss */
 #top-boxes .row:nth-child(2) .small-8 h2 {
   color: #414042;
 }
 
-/* line 88, /Applications/MAMP/htdocs/Craft-test/public/assets/sass/_home.scss */
+/* line 81, ../sass/_home.scss */
 #middle-blurb {
   background-image: url("../img/orange-background.jpg");
   background-size: cover;
   margin: 0;
   max-width: none;
 }
-/* line 93, /Applications/MAMP/htdocs/Craft-test/public/assets/sass/_home.scss */
+/* line 86, ../sass/_home.scss */
 #middle-blurb div {
-  max-width: 458px;
-  margin: 19% auto;
+  margin: 40% auto;
 }
-/* line 96, /Applications/MAMP/htdocs/Craft-test/public/assets/sass/_home.scss */
+/* line 90, ../sass/_home.scss */
 #middle-blurb div h2, #middle-blurb div p {
   color: #414042;
   text-align: center;
 }
-/* line 100, /Applications/MAMP/htdocs/Craft-test/public/assets/sass/_home.scss */
+/* line 94, ../sass/_home.scss */
 #middle-blurb div h2 {
-  margin-bottom: 40px;
+  margin-bottom: 5%;
 }
 
-/* line 108, /Applications/MAMP/htdocs/Craft-test/public/assets/sass/_home.scss */
+/* line 101, ../sass/_home.scss */
 #middle-boxes .row {
   max-width: none;
 }
-/* line 111, /Applications/MAMP/htdocs/Craft-test/public/assets/sass/_home.scss */
+/* line 104, ../sass/_home.scss */
 #middle-boxes .row div {
   display: inline-block;
   float: left;
   height: 100%;
+  height: 50vh;
   text-align: center;
 }
-/* line 116, /Applications/MAMP/htdocs/Craft-test/public/assets/sass/_home.scss */
+/* line 110, ../sass/_home.scss */
 #middle-boxes .row div h2 {
   color: white;
   font-weight: 200;
-  padding: 22% 0;
   position: relative;
-  top: 50%;
+  top: 48%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
-/* line 124, /Applications/MAMP/htdocs/Craft-test/public/assets/sass/_home.scss */
+/* line 118, ../sass/_home.scss */
 #middle-boxes .row .small-4:first-child {
   background-color: #f47920;
 }
-/* line 127, /Applications/MAMP/htdocs/Craft-test/public/assets/sass/_home.scss */
+/* line 121, ../sass/_home.scss */
 #middle-boxes .row .small-4:nth-child(2) {
   background-color: #f6eb16;
 }
-/* line 129, /Applications/MAMP/htdocs/Craft-test/public/assets/sass/_home.scss */
+/* line 123, ../sass/_home.scss */
 #middle-boxes .row .small-4:nth-child(2) h2 {
   color: #414042;
 }
-/* line 133, /Applications/MAMP/htdocs/Craft-test/public/assets/sass/_home.scss */
+/* line 127, ../sass/_home.scss */
 #middle-boxes .row .small-4:nth-child(3) {
   background-color: #414042;
 }
 
-/* line 140, /Applications/MAMP/htdocs/Craft-test/public/assets/sass/_home.scss */
+/* line 134, ../sass/_home.scss */
 #our-people {
   text-align: center;
 }
-/* line 142, /Applications/MAMP/htdocs/Craft-test/public/assets/sass/_home.scss */
+/* line 136, ../sass/_home.scss */
 #our-people > div {
-  margin: 5% 20%;
+  margin: 5% auto;
 }
-/* line 144, /Applications/MAMP/htdocs/Craft-test/public/assets/sass/_home.scss */
+/* line 138, ../sass/_home.scss */
 #our-people > div h2 {
   color: #414042;
   text-align: center;
   margin-bottom: 40px;
 }
-/* line 150, /Applications/MAMP/htdocs/Craft-test/public/assets/sass/_home.scss */
+/* line 144, ../sass/_home.scss */
 #our-people > div .row .small-3 {
   display: inline-block;
   overflow: hidden;
   float: left;
 }
-/* line 155, /Applications/MAMP/htdocs/Craft-test/public/assets/sass/_home.scss */
+/* line 150, ../sass/_home.scss */
 #our-people > div .row .small-3 h6 {
   margin-top: 0;
   font-weight: lighter;
@@ -331,7 +344,7 @@ nav li a:hover, nav li a:active, nav li a:focus {
   color: black;
   letter-spacing: 0.5px;
 }
-/* line 167, /Applications/MAMP/htdocs/Craft-test/public/assets/sass/_home.scss */
+/* line 162, ../sass/_home.scss */
 #our-people > div .row .small-3 span {
   z-index: 10;
   opacity: 0;
@@ -344,7 +357,7 @@ nav li a:hover, nav li a:active, nav li a:focus {
   -o-transition: all 1s ease-out;
   transition: all 1s ease-out;
 }
-/* line 179, /Applications/MAMP/htdocs/Craft-test/public/assets/sass/_home.scss */
+/* line 174, ../sass/_home.scss */
 #our-people > div .row .small-3 img {
   z-index: 0;
   opacity: 1;
@@ -354,49 +367,46 @@ nav li a:hover, nav li a:active, nav li a:focus {
   -o-transition: all 1s ease-out;
   transition: all 1s ease-out;
 }
-/* line 188, /Applications/MAMP/htdocs/Craft-test/public/assets/sass/_home.scss */
+/* line 183, ../sass/_home.scss */
 #our-people > div .row .small-3:hover img, #our-people > div .row .small-3:active img, #our-people > div .row .small-3:focus img {
   transform: scale(1.05);
   opacity: .6;
 }
-/* line 193, /Applications/MAMP/htdocs/Craft-test/public/assets/sass/_home.scss */
+/* line 188, ../sass/_home.scss */
 #our-people > div .row .small-3:hover span, #our-people > div .row .small-3:active span, #our-people > div .row .small-3:focus span {
   opacity: 1;
 }
 
-/* line 213, /Applications/MAMP/htdocs/Craft-test/public/assets/sass/_home.scss */
-#contact {
-  height: 900px;
-  height: 100vh;
+/* line 212, ../sass/_home.scss */
+.form, .hours {
+  padding: 7% 0;
 }
 
-/* line 217, /Applications/MAMP/htdocs/Craft-test/public/assets/sass/_home.scss */
+/* line 216, ../sass/_home.scss */
 .form {
   float: left;
   width: 70%;
-  height: 100%;
   background-color: #414042;
   color: white;
-  padding: 13% 5%;
 }
-/* line 224, /Applications/MAMP/htdocs/Craft-test/public/assets/sass/_home.scss */
+/* line 221, ../sass/_home.scss */
 .form .form-inner {
   margin: 0 auto;
   max-width: 42.54rem;
 }
-/* line 228, /Applications/MAMP/htdocs/Craft-test/public/assets/sass/_home.scss */
+/* line 225, ../sass/_home.scss */
 .form h2 {
   color: #cbcbcd;
   font-weight: 300;
 }
-/* line 232, /Applications/MAMP/htdocs/Craft-test/public/assets/sass/_home.scss */
+/* line 229, ../sass/_home.scss */
 .form label {
   color: #cbcbcd;
   font-weight: lighter;
   width: 15%;
   display: inline-block;
 }
-/* line 238, /Applications/MAMP/htdocs/Craft-test/public/assets/sass/_home.scss */
+/* line 235, ../sass/_home.scss */
 .form textarea, .form input {
   background: #414042;
   border: #414042;
@@ -405,14 +415,15 @@ nav li a:hover, nav li a:active, nav li a:focus {
   color: #cbcbcd;
   font-weight: 300;
 }
-/* line 246, /Applications/MAMP/htdocs/Craft-test/public/assets/sass/_home.scss */
+/* line 243, ../sass/_home.scss */
 .form textarea:hover, .form textarea:focus, .form textarea:active, .form input:hover, .form input:focus, .form input:active {
   background-color: #414042;
   border: 1px solid #cbcbcd;
   color: #cbcbcd;
 }
-/* line 252, /Applications/MAMP/htdocs/Craft-test/public/assets/sass/_home.scss */
+/* line 249, ../sass/_home.scss */
 .form .button {
+  float: right;
   background-color: #414042;
   border: 1px solid #cbcbcd;
   font-weight: 300;
@@ -420,87 +431,265 @@ nav li a:hover, nav li a:active, nav li a:focus {
   box-shadow: 0px 0px 0px red;
   width: auto;
 }
-/* line 260, /Applications/MAMP/htdocs/Craft-test/public/assets/sass/_home.scss */
+/* line 258, ../sass/_home.scss */
 .form .button:hover, .form .button:focus, .form .button:hover {
   color: white;
   border: 1px solid white;
   background-color: #414042;
 }
 
-/* line 267, /Applications/MAMP/htdocs/Craft-test/public/assets/sass/_home.scss */
+/* line 265, ../sass/_home.scss */
 .hours {
   float: left;
   width: 30%;
-  height: 100%;
   background-color: #f6eb16;
-  padding: 13% 5%;
 }
-/* line 273, /Applications/MAMP/htdocs/Craft-test/public/assets/sass/_home.scss */
+/* line 269, ../sass/_home.scss */
 .hours .hours-inner {
   max-width: 20rem;
   margin: 0 auto;
 }
-/* line 277, /Applications/MAMP/htdocs/Craft-test/public/assets/sass/_home.scss */
+/* line 273, ../sass/_home.scss */
 .hours h4, .hours p, .hours a {
   color: #414042;
   text-align: center;
 }
-/* line 281, /Applications/MAMP/htdocs/Craft-test/public/assets/sass/_home.scss */
+/* line 277, ../sass/_home.scss */
 .hours h4 {
   font-weight: 300;
 }
-/* line 284, /Applications/MAMP/htdocs/Craft-test/public/assets/sass/_home.scss */
+/* line 280, ../sass/_home.scss */
 .hours p {
   margin-bottom: 0;
 }
-/* line 287, /Applications/MAMP/htdocs/Craft-test/public/assets/sass/_home.scss */
+/* line 283, ../sass/_home.scss */
 .hours address {
   font-style: normal;
   font-weight: 300;
 }
 
-/* line 292, /Applications/MAMP/htdocs/Craft-test/public/assets/sass/_home.scss */
+/* line 288, ../sass/_home.scss */
 #map {
   background-color: #414042;
 }
 
-/* line 300, /Applications/MAMP/htdocs/Craft-test/public/assets/sass/_home.scss */
+/* line 292, ../sass/_home.scss */
 #traffic-map {
   height: 400px;
   width: 550px;
 }
 
-/* line 304, /Applications/MAMP/htdocs/Craft-test/public/assets/sass/_home.scss */
+/* line 296, ../sass/_home.scss */
 .gm-style-iw * {
   display: block;
   width: 100%;
 }
 
-/* line 308, /Applications/MAMP/htdocs/Craft-test/public/assets/sass/_home.scss */
+/* line 300, ../sass/_home.scss */
 .gm-style-iw h4, .gm-style-iw p {
   margin: 0;
   padding: 0;
 }
 
-/* line 312, /Applications/MAMP/htdocs/Craft-test/public/assets/sass/_home.scss */
+/* line 304, ../sass/_home.scss */
 .gm-style-iw a {
   color: #4272db;
 }
 
-/* line 2, /Applications/MAMP/htdocs/Craft-test/public/assets/sass/_awards-clients.scss */
+@media only all and (max-width: 64em) {
+  /* line 310, ../sass/_home.scss */
+  p {
+    border: 3px solid pink;
+  }
+
+  /* line 314, ../sass/_home.scss */
+  #top-blurb > div, #middle-blurb > div, #our-people > div {
+    width: 86%;
+  }
+
+  /* line 319, ../sass/_home.scss */
+  #top-blurb > div, #middle-blurb > div {
+    margin: 25% auto;
+  }
+}
+@media only all and (max-width: 47.937em) {
+  /* line 325, ../sass/_home.scss */
+  p {
+    border: 1px solid yellow;
+  }
+
+  /* line 331, ../sass/_home.scss */
+  #our-people > div .row .small-3 {
+    width: 25%;
+  }
+}
+@media only all and (max-width: 38em) {
+  /* line 339, ../sass/_home.scss */
+  p {
+    border: 1px solid blue;
+  }
+
+  /* line 343, ../sass/_home.scss */
+  #hero img {
+    width: 60%;
+  }
+
+  /* line 348, ../sass/_home.scss */
+  #middle-blurb > div {
+    margin: 40% auto;
+  }
+
+  /* line 353, ../sass/_home.scss */
+  #top-blurb > div {
+    margin: 20% auto;
+  }
+
+  /* line 358, ../sass/_home.scss */
+  #middle-boxes .small-4, #middle-boxes .small-8, #top-boxes .small-4, #top-boxes .small-8 {
+    width: 100%;
+  }
+
+  /* line 363, ../sass/_home.scss */
+  #our-people > div {
+    width: 86%;
+    margin: 5% auto;
+  }
+  /* line 366, ../sass/_home.scss */
+  #our-people > div .row .small-3 {
+    width: 33.33%;
+  }
+
+  /* line 371, ../sass/_home.scss */
+  .form {
+    width: 100%;
+  }
+  /* line 373, ../sass/_home.scss */
+  .form label {
+    width: 28%;
+  }
+  /* line 376, ../sass/_home.scss */
+  .form input, .form textarea {
+    width: 70%;
+  }
+  /* line 379, ../sass/_home.scss */
+  .form .button {
+    width: 100%;
+  }
+
+  /* line 383, ../sass/_home.scss */
+  .hours {
+    width: 100%;
+  }
+}
+@media only all and (max-width: 22em) {
+  /* line 388, ../sass/_home.scss */
+  p {
+    border: 1px solid lime;
+  }
+
+  /* line 395, ../sass/_home.scss */
+  #our-people > div .row .small-3 {
+    width: 50%;
+  }
+
+  /* line 400, ../sass/_home.scss */
+  .form, .hours {
+    min-height: 336px;
+    min-height: 70vh;
+  }
+  /* line 403, ../sass/_home.scss */
+  .form .form-inner, .form .hours-inner, .hours .form-inner, .hours .hours-inner {
+    width: 86%;
+    margin: 5% auto;
+  }
+}
+@media only all and (min-width: 48em) {
+  /* line 411, ../sass/_home.scss */
+  p {
+    border: 1px solid orange;
+  }
+
+  /* line 415, ../sass/_home.scss */
+  #hero img {
+    width: 40%;
+  }
+
+  /* line 420, ../sass/_home.scss */
+  #top-blurb > div, #middle-blurb > div, #our-people > div {
+    max-width: 39.5em;
+  }
+
+  /* line 426, ../sass/_home.scss */
+  #top-blurb > div, #middle-blurb > div {
+    margin: 20% auto;
+  }
+
+  /* line 430, ../sass/_home.scss */
+  #contact {
+    min-height: 600px;
+    min-height: 100vh;
+  }
+
+  /* line 434, ../sass/_home.scss */
+  .form, .hours {
+    padding: 7% 5%;
+    height: 70vh;
+  }
+
+  /* line 441, ../sass/_home.scss */
+  .hours {
+    width: 40%;
+  }
+
+  /* line 444, ../sass/_home.scss */
+  .form {
+    width: 60%;
+  }
+  /* line 446, ../sass/_home.scss */
+  .form label {
+    width: 24%;
+  }
+  /* line 449, ../sass/_home.scss */
+  .form input, .form textarea {
+    width: 74%;
+  }
+}
+@media only all and (min-width: 64em) {
+  /* line 455, ../sass/_home.scss */
+  p {
+    border: 1px solid red;
+  }
+
+  /* line 459, ../sass/_home.scss */
+  #hero img {
+    width: 30%;
+  }
+}
+@media only all and (min-width: 78em) {
+  /* line 466, ../sass/_home.scss */
+  p {
+    border: 1px solid purple;
+  }
+
+  /* line 470, ../sass/_home.scss */
+  #top-blurb > div, #middle-blurb > div, #our-people > div {
+    max-width: 49.5em;
+  }
+}
+/* line 2, ../sass/_awards-clients.scss */
 #awards-page, #clients-page {
   padding-top: 120px;
 }
-/* line 4, /Applications/MAMP/htdocs/Craft-test/public/assets/sass/_awards-clients.scss */
+/* line 4, ../sass/_awards-clients.scss */
 #awards-page .sub-heading, #clients-page .sub-heading {
   margin: 20px auto 50px;
   text-align: center;
 }
-/* line 7, /Applications/MAMP/htdocs/Craft-test/public/assets/sass/_awards-clients.scss */
+/* line 7, ../sass/_awards-clients.scss */
 #awards-page .sub-heading h1, #clients-page .sub-heading h1 {
   padding-bottom: 0;
 }
-/* line 10, /Applications/MAMP/htdocs/Craft-test/public/assets/sass/_awards-clients.scss */
+/* line 10, ../sass/_awards-clients.scss */
 #awards-page .sub-heading p, #clients-page .sub-heading p {
   font-size: 14px;
   color: #8c8a8f;
@@ -509,23 +698,23 @@ nav li a:hover, nav li a:active, nav li a:focus {
   font-weight: 400;
   line-height: 17px;
 }
-/* line 19, /Applications/MAMP/htdocs/Craft-test/public/assets/sass/_awards-clients.scss */
+/* line 19, ../sass/_awards-clients.scss */
 #awards-page .awards, #clients-page .awards {
   max-width: 62.5em;
   width: 80%;
   margin: 0 auto 50px;
   text-align: center;
 }
-/* line 24, /Applications/MAMP/htdocs/Craft-test/public/assets/sass/_awards-clients.scss */
+/* line 24, ../sass/_awards-clients.scss */
 #awards-page .awards > div, #clients-page .awards > div {
   display: inline-block;
 }
-/* line 27, /Applications/MAMP/htdocs/Craft-test/public/assets/sass/_awards-clients.scss */
+/* line 27, ../sass/_awards-clients.scss */
 #awards-page .awards > div .img-wrap, #clients-page .awards > div .img-wrap {
   width: 100%;
   text-align: center;
 }
-/* line 31, /Applications/MAMP/htdocs/Craft-test/public/assets/sass/_awards-clients.scss */
+/* line 31, ../sass/_awards-clients.scss */
 #awards-page .awards > div img, #clients-page .awards > div img {
   max-width: 70%;
   max-height: 90%;
@@ -537,67 +726,67 @@ nav li a:hover, nav li a:active, nav li a:focus {
   -o-transition: all 0.6s ease-out;
   transition: all 0.6s ease-out;
 }
-/* line 38, /Applications/MAMP/htdocs/Craft-test/public/assets/sass/_awards-clients.scss */
+/* line 38, ../sass/_awards-clients.scss */
 #awards-page .awards > div img:hover, #awards-page .awards > div img:active, #awards-page .awards > div img:focus, #clients-page .awards > div img:hover, #clients-page .awards > div img:active, #clients-page .awards > div img:focus {
   transform: scale(1.05);
 }
 
-/* line 50, /Applications/MAMP/htdocs/Craft-test/public/assets/sass/_awards-clients.scss */
+/* line 50, ../sass/_awards-clients.scss */
 #awards-page > p {
   font-size: 12px;
 }
-/* line 52, /Applications/MAMP/htdocs/Craft-test/public/assets/sass/_awards-clients.scss */
+/* line 52, ../sass/_awards-clients.scss */
 #awards-page > p:last-child {
   margin-bottom: 10px;
 }
-/* line 56, /Applications/MAMP/htdocs/Craft-test/public/assets/sass/_awards-clients.scss */
+/* line 56, ../sass/_awards-clients.scss */
 #awards-page .awards > div {
   width: 32.333%;
   padding: 20px 2.4%;
 }
-/* line 59, /Applications/MAMP/htdocs/Craft-test/public/assets/sass/_awards-clients.scss */
+/* line 59, ../sass/_awards-clients.scss */
 #awards-page .awards > div h5, #awards-page .awards > div h6, #awards-page .awards > div p {
   font-size: 10px;
   margin: 0;
   text-align: center;
 }
-/* line 64, /Applications/MAMP/htdocs/Craft-test/public/assets/sass/_awards-clients.scss */
+/* line 64, ../sass/_awards-clients.scss */
 #awards-page .awards > div h5 {
   font-weight: 400;
 }
-/* line 67, /Applications/MAMP/htdocs/Craft-test/public/assets/sass/_awards-clients.scss */
+/* line 67, ../sass/_awards-clients.scss */
 #awards-page .awards > div h6 {
   font-weight: 200;
 }
-/* line 71, /Applications/MAMP/htdocs/Craft-test/public/assets/sass/_awards-clients.scss */
+/* line 71, ../sass/_awards-clients.scss */
 #awards-page .awards > div .img-wrap {
   height: 170px;
   line-height: 170px;
 }
 
-/* line 81, /Applications/MAMP/htdocs/Craft-test/public/assets/sass/_awards-clients.scss */
+/* line 81, ../sass/_awards-clients.scss */
 #clients-page .awards > div {
   width: 19%;
   padding: 10px 0;
 }
-/* line 84, /Applications/MAMP/htdocs/Craft-test/public/assets/sass/_awards-clients.scss */
+/* line 84, ../sass/_awards-clients.scss */
 #clients-page .awards > div .img-wrap {
   height: 120px;
   line-height: 120px;
 }
-/* line 88, /Applications/MAMP/htdocs/Craft-test/public/assets/sass/_awards-clients.scss */
+/* line 88, ../sass/_awards-clients.scss */
 #clients-page .awards > div img {
   margin: 0 auto;
 }
-/* line 91, /Applications/MAMP/htdocs/Craft-test/public/assets/sass/_awards-clients.scss */
+/* line 91, ../sass/_awards-clients.scss */
 #clients-page .awards > div:nth-child(11) {
   width: 39%;
 }
-/* line 94, /Applications/MAMP/htdocs/Craft-test/public/assets/sass/_awards-clients.scss */
+/* line 94, ../sass/_awards-clients.scss */
 #clients-page .awards > div:nth-child(11) img {
   max-width: 80%;
 }
-/* line 98, /Applications/MAMP/htdocs/Craft-test/public/assets/sass/_awards-clients.scss */
+/* line 98, ../sass/_awards-clients.scss */
 #clients-page .awards > div:nth-child(15), #clients-page .awards > div:nth-child(16), #clients-page .awards > div:nth-child(17), #clients-page .awards > div:nth-child(18) {
   width: 24%;
 }
@@ -606,7 +795,7 @@ nav li a:hover, nav li a:active, nav li a:focus {
  * iPad with portrait orientation.
  */
 @media all and (device-width: 768px) and (device-height: 1024px) and (orientation: portrait) {
-  /* line 7, /Applications/MAMP/htdocs/Craft-test/public/assets/sass/_media.scss */
+  /* line 7, ../sass/_media.scss */
   #hero {
     height: 1024px;
   }
@@ -615,7 +804,7 @@ nav li a:hover, nav li a:active, nav li a:focus {
  * iPad with landscape orientation.
  */
 @media all and (device-width: 768px) and (device-height: 1024px) and (orientation: landscape) {
-  /* line 16, /Applications/MAMP/htdocs/Craft-test/public/assets/sass/_media.scss */
+  /* line 16, ../sass/_media.scss */
   #hero {
     height: 768px;
   }
@@ -625,7 +814,7 @@ nav li a:hover, nav li a:active, nav li a:focus {
  * You can also target devices with aspect ratio.
  */
 @media screen and (device-aspect-ratio: 40 / 71) {
-  /* line 26, /Applications/MAMP/htdocs/Craft-test/public/assets/sass/_media.scss */
+  /* line 26, ../sass/_media.scss */
   #hero {
     height: 500px;
   }
