@@ -1,5 +1,18 @@
 //------------------------------------Home Page----------------------------------------
-
+// #home{
+// 	nav{
+// 		position:absolute;
+// 		li{
+// 			a{
+// 				color:white;
+// 				//font-weight: 300;
+// 				&:hover, &:active, &:focus{
+// 					color: $highlight-color;
+// 				}
+// 			}
+// 		} 
+// 	} 
+// }
 #hero{
 	width:100%;
 	vertical-align:middle;
@@ -29,7 +42,6 @@
 }
 #top-boxes{
 	.row{
-		width:100%;
 		max-width: none;
 		@extend .row-height;
 		div{
@@ -44,21 +56,17 @@
 		}
 		&:first-child{
 			.small-8{
-				float:right;
 				background-color: $dark-color;
 			}
 			.small-4{
-				float:right;
 				background-color: $highlight-color;
 			}
 		}
 		&:nth-child(2){
 			.small-4{
-				float:left;
 				background-color: $highlight-color;
 			}
 			.small-8{
-				float:left;
 				background-color: $highlight-color2;
 				h2{
 					color: $dark-color;
@@ -79,12 +87,13 @@
 			text-align: center;
 		}
 		h2{
-			margin-bottom:5%;
+			margin-bottom:40px;
 		}
 	}
 }
 
 #middle-boxes{
+
 	.row{
 		@extend .row-height;
 		max-width:none;
@@ -120,7 +129,7 @@
 #our-people{
 	text-align:center;
 	&>div{
-		margin:5% auto;
+		margin:5% 20%;
 		h2{
 			color: $dark-color;
 			text-align: center;
@@ -128,7 +137,6 @@
 		}
 		.row{
 			.small-3{
-				
 				display:inline-block;
 				overflow: hidden;
 				float:left;
@@ -196,8 +204,10 @@
 .form{
 	float:left;
 	width: 70%;
+	height:100%;
 	background-color: $dark-color;
-	color:white;	
+	color:white;
+	padding: 13% 5%;	
 	.form-inner{
 		margin:0 auto;
 		max-width: 42.54rem;
@@ -236,7 +246,6 @@
 		}
 	}
 	.button{
-		float:right;
 		background-color: $dark-color;
 		border: 1px solid $light-color;
 		font-weight:300;
@@ -265,7 +274,9 @@
 .hours{
 	float:left;
 	width: 30%;
+	height:100%;
 	background-color: $highlight-color2;
+	padding: 13% 5%;
 	.hours-inner{
 		max-width:20rem;
 		margin:0 auto;
