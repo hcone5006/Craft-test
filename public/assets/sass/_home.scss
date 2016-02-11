@@ -252,8 +252,9 @@
 	}
 }
 .errors{
-	margin: -23px 0 0 140px;
-    position: absolute;
+	margin:0;
+	// margin: -23px 0 0 140px;
+ //    position: absolute;
 	li{
 		list-style:none;
 		color:$error-color;
