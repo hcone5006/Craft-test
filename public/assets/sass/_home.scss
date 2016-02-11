@@ -1,24 +1,17 @@
 //------------------------------------Home Page----------------------------------------
 
 #hero{
-	// height: 900px;
-	// height:100vh;
 	width:100%;
-	display:table-cell;
 	vertical-align:middle;
 	background: $dark-color url("../img/hero-img.png") center center / cover no-repeat; 
 	img{
-		// padding: 30vh 0;
-		// padding: 25% 0;
-		vertical-align: middle;
+		@include vertical-align();
 		width: 60%;
 		margin:0 auto;
 		display:block;
 	}
 }
 #top-blurb{
-	// min-height:600px;
-	// min-height:100vh;
 	background-image: url("../img/fish.png");
 	background-position: 96% 4%;
 	background-size: 20%;
@@ -26,9 +19,7 @@
 	b{
 		font-weight:400;
 	}
-	//height:70vh;
 	div{
-		// width: 86%;
 		margin:25% auto;
 		h1, p{
 			color: $dark-color;
@@ -43,9 +34,7 @@
 		@extend .row-height;
 		div{
 			display: inline-block;
-			// float:left;
 			height:100%;
-			height:50vh;
 			text-align:center;
 			h2{
 				font-weight:300;
@@ -84,8 +73,6 @@
 	margin:0;
 	max-width:none;
 		div{
-			// max-width: $small-text-box;
-			// width: 86%;
 			margin:40% auto;
 		h2, p{
 			color: $dark-color;
@@ -105,12 +92,11 @@
 			display: inline-block;
 			float:left;
 			height:100%;
-			height:50vh;
 			text-align:center;
-			h2{
+			h2, h2 a{
+				font-size: 1.6rem;
 				color: white;
 				font-weight: 200;
-				// padding:22% 0;
 				@include vertical-align();
 			}
 		}
@@ -146,7 +132,6 @@
 				display:inline-block;
 				overflow: hidden;
 				float:left;
-				// background-color: $light-color;
 				h6{
 					margin-top:0;
 					font-weight:lighter;
@@ -154,8 +139,6 @@
 					text-align: center;
 					margin:88% 0 0;
 					padding:3px 0;
-					//background-color:#212022;
-					//background-color: rgba(64, 62, 65, .4);
 					color:black;
 					letter-spacing: 0.5px;
 				}
@@ -164,11 +147,8 @@
 					opacity: 0;
 					position: absolute;
 					width:100%;
-					// height:100%;
 					left:0;
 					bottom:0;
-					//top:0;
-					//background-color: rgba(65, 64, 66, 0.7);
 					@include transition(1s);
 				}
 				img{
@@ -210,7 +190,7 @@
 	// height:100vh;
 }
 .form, .hours{
-	padding: 7% 0;
+	padding: 5% 0;
 	// height:70vh;
 }
 .form{
@@ -226,13 +206,18 @@
 		color:$light-color;
 		font-weight:300;
 	}
+	p{
+		margin-bottom:1.5rem;
+	}
 	label{
+		font-size:1rem;
 		color:$light-color;
 		font-weight:lighter;
 		width: 15%;
 		display: inline-block;
 	}
 	textarea, input{
+
 		background: $dark-color;
 		//border-radius: 5px;
 		border: $dark-color;
@@ -244,6 +229,10 @@
 			background-color: $dark-color;
 			border:1px solid $light-color;
 			color: $light-color;
+		}
+		input[type="text"], input[type="password"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="week"], input[type="email"], input[type="number"], input[type="search"], input[type="tel"], input[type="time"], input[type="url"], textarea{
+			-webkit-box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.3);
+    		box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.3);
 		}
 	}
 	.button{
@@ -260,6 +249,16 @@
 			border:1px solid white;
 			background-color: $dark-color;
 		}
+	}
+}
+.errors{
+	margin: -23px 0 0 140px;
+    position: absolute;
+	li{
+		list-style:none;
+		color:$error-color;
+		font-weight:300;
+		font-size:0.8rem;
 	}
 }
 .hours{
@@ -286,7 +285,7 @@
 	}
 }
 #map{
-	background-color:$dark-color;
+	background-color:#545256;
 }
 
  #traffic-map {
@@ -321,7 +320,7 @@
 		}
 	}
 }
-@media only all and (max-width: 47.937em){
+@media only all and (max-width: 48em){
 	p{
 		border:1px solid yellow;
 	}
@@ -334,6 +333,17 @@
 			}
 		}
 	} 
+	#top-boxes .row div h2, #middle-boxes .row div h2{
+		font-size:1.3rem;
+	}
+	.row-height, #top-boxes .row, #middle-boxes .row {
+	    height: 200px;
+	    height: 25vh;
+	}	
+	.form, .hours{
+		width: 100%;
+		padding: 7% 5%;
+	}
 }
 @media only all and (max-width: 38em){
 	p{
@@ -390,8 +400,6 @@
 	} 
 	#our-people{
 		& > div{
-			// width:86%;
-			// margin:5% auto;
 			.row .small-3{
 				width:50%;
 			}
@@ -418,7 +426,6 @@
 	}
 	#top-blurb, #middle-blurb, #our-people {
 		& > div{
-			// border: 1px dotted lime;
 			max-width: 39.5em;
 		}
 	}
@@ -432,24 +439,26 @@
 		min-height:100vh;
 	}
 	.form, .hours{
-		padding: 7% 5%;
-		height:70vh;
+		padding: 3% 3%;
+		height:85vh;
 		.hours-inner, .form-inner{
-			// margin: 0 auto;
+			
 		}
 	}
 	.hours{
 		width: 40%;
+		
 	}
 	.form{
+		
 		width: 60%;
 		label{
-			width:24%;
+			width:20%;
 		}
 		input, textarea{
-			width:74%;
+			width:79%;
 		}
-	}
+	} 
 }
 @media only all and (min-width: 64em){
 	p{
@@ -460,11 +469,9 @@
 			width: 30%;
 		}
 	}
-}
-
-@media only all and (min-width: 78em){
-	p{
-		border:1px solid purple;
+	.form, .hours {
+	    padding: 3% 5%;
+	    height: 80vh;
 	}
 	#top-blurb, #middle-blurb, #our-people {
 		& > div{
@@ -472,15 +479,36 @@
 			max-width: 49.5em;
 		}
 	}
-	// #contact{
-	// 	min-height:600px;
-	// 	min-height:100vh;
+}
+
+@media only all and (min-width: 78em){
+	p{
+		border:1px solid purple;
+	}
+	// .form, .hours {
+	// 	padding:2% 5%;
+	//     height: 66vh;
 	// }
-	// .form, .hours{
-	// 	padding: 7% 0;
-	// 	height:70vh;
-	// 	.hours-inner, .form-inner{
-	// 		// margin: 0 auto;
-	// 	}
+	#top-blurb, #middle-blurb, #our-people {
+		& > div{
+			// border: 1px dotted lime;
+			// max-width: 59.5em;
+		}
+	}
+}
+
+@media only all and (min-width: 88em){
+	p{
+		border:1px solid #333;
+	}
+	// .form, .hours {
+	// 	padding:2% 5%;
+	//     height: 66vh;
 	// }
+	#top-blurb, #middle-blurb, #our-people {
+		& > div{
+			// border: 1px dotted lime;
+			max-width: 59.5em;
+		}
+	}
 }

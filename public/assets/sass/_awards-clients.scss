@@ -105,3 +105,52 @@
 		} 
 	} 
 }
+//Media Queries
+@media only all and (max-width: 64em){
+	#clients-page{
+		.awards{
+			& > div, div:nth-child(11), div:nth-child(15), div:nth-child(16),div:nth-child(17),div:nth-child(18){
+		    	width: 32%;
+			}
+		} 
+	} 
+	
+	// #clients-page .awards > div:nth-child(15), #clients-page .awards > div:nth-child(16), #clients-page .awards > div:nth-child(17), #clients-page .awards > div:nth-child(18){
+
+	// }
+}
+@media only all and (max-width: 48em){
+	#awards-page .awards > div{
+		width: 49%;
+	}
+	#clients-page{
+		.awards{
+			& > div, div:nth-child(11), div:nth-child(15), div:nth-child(16),div:nth-child(17),div:nth-child(18){
+		    	width: 49%;
+			}
+		} 
+	} 
+	// #clients-page .awards > div {
+	//     width: 32%;
+	// }
+}
+@media only all and (max-width: 38em){
+	#awards-page .awards > div{
+		width: 100%;
+	}
+	 
+}
+@media only all and (max-width: 22em){
+	#awards-page, #clients-page {
+		.sub-heading{
+			margin: 20px 8% 50px;
+		}
+	} 
+	#clients-page{
+		.awards{
+			& > div, div:nth-child(11), div:nth-child(15), div:nth-child(16),div:nth-child(17),div:nth-child(18){
+		    	width: 100%;
+			}
+		} 
+	}
+}
